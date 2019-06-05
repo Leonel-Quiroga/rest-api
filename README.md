@@ -2,12 +2,12 @@
 
 CONSIGNA:
 
-Presentación y objetivos
+<p>Presentación y objetivos</p>
 Se desea aplicar en forma práctica los conceptos de Web Services adquiridos en teoría.
 El objetivo de esta actividad es implementar el backend de una aplicación de software
 mediante un web service Restful que implementa la arquitectura Rest.
 
-Materiales y recursos
+<p>Materiales y recursos:</p>
 Para el desarrollo de la actividad deberán utilizarse los siguientes materiales y recursos:
 <ul>
         <li>HTTP: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol</li>
@@ -22,14 +22,14 @@ Para el desarrollo de la actividad deberán utilizarse los siguientes materiales
         <li> Postman: https://www.getpostman.com/</li>
 </ul>
 
-Enunciado General
+<p>Enunciado General</p>
 Se pide desarrollar realizar el backend de una aplicación de música mediante un web
 service Restful que implementa la arquitectura Rest.
 Particularmente se pide desarrollar la funcionalidad CRUD de paylists por parte de los
 usuarios.
 El backend debe implementar el standard de autenticacion JWT.
 
-El backend debe permitir a los usuarios:
+<p>El backend debe permitir a los usuarios:</p>
 <ul>
         <li> Autenticarse mediante su email y password.</li>
         <li> Consultar las canciones disponibles, pudiendo ser filtradas por autor y genero.</li>
@@ -41,7 +41,7 @@ El backend debe permitir a los usuarios:
         <li> Borrar una playlist.</li>
 </ul>
 
-La aplicación debe implementar las siguientes clases:
+<p>La aplicación debe implementar las siguientes clases:</p>
 <ul>
         <li> User (email:String,password:String)</li>
         <li> PlayList (name:String,user:User,songs:List<Song>)</li>
@@ -49,7 +49,7 @@ La aplicación debe implementar las siguientes clases:
         <li> Genre (enum:rock,techno,pop,jazz,folk,classical)</li>
 </ul>
 
-El modelo de la base de datos debe tener las siguientes tablas:
+<p>El modelo de la base de datos debe tener las siguientes tablas:</p>
 <ul>
         <li> users(id:integer, email:varchar, password:varchar) </li> 
         <li> playlists(id:integer, user_id:integer, name:varchar) </li>
@@ -60,44 +60,44 @@ Las capas de negocio y DAO se pide utilizar EJB - del modo utlizado en POO -
 Para la capa de persistencia vamos utilizar JPA.
 El motor de base de datos puede ser MySQL o PostgreSQL.
 
-Definicion de endpoints
+<p>Definicion de endpoints: </p>
 El API Rest a desarrollar debe implementar los siguientes endpoints.
 Completar los mismos con según el método/verbo de HTTP que corresponda.
 
-Autenticación
-Para autenticacion del usuario. En body del resquest deben ir los parametros email y
+<p>Autenticación:</p>
+Para autenticacion del usuario, en body del resquest deben ir los parametros email y
 password. Retorna token que deberá ser incluido en el header de los endpoints que
 requieran autenticacion.
 <ul>
   <li>POST http://localhost:8080/mymusic/auth</li>
 </ul>
 
-Lista de canciones:
+<p>Lista de canciones:</p>
 Retorna JSON con el listado de canciones.
 <ul>
   <li>______ http://localhost:8080/mymusic/songs?author="Spinetta"&genre=rock</li>
 </ul>
 
-Listado de playlist creadas:
+<p>Listado de playlist creadas:</p>
 Retorna JSON con el listado de playlists
 <ul>
   <li>______ http://localhost:8080/mymusic/playlists/</li>
 </ul>
 
-Crear una playlist:
+<p>Crear una playlist:</p>
 Permite crear una nueva playlist - Requiere estar autenticado y enviar token en header.
 En el body se envia los datos del playlist en formato JSON.
 <ul>
   <li>______ http://localhost:8080/mymusic/playlists/</li>
 </ul>
 
-Información de una playlist:
+<p>Información de una playlist:</p>
 Retorna JSON con todos los datos de un playlist incluyendo la lista de canciones.
 <ul>
   <li>______ http://localhost:8080/mymusic/playlists/{id}</li>
 </ul>
 
-Actualizar el nombre de una playlist:
+<p>Actualizar el nombre de una playlist:</p>
 Permite actualizar el nombre de un playlist. Requiere autenticacion.
 Solo el usuario que creo el playlist puede actualizarlo. Se envia en el body el nombre
 que debe tomar el playlist.
@@ -105,7 +105,7 @@ que debe tomar el playlist.
  <li> ______ http://localhost:8080/mymusic/playlists/{id}</li>
 </ul>
 
-Agregar una canción a una playlist:
+Agregar una canción a una playlist:</p>
 Permite agregar una cancion a un playlist. Requiere autenticacion.
 Solo el usuario que creo el playlist puede realizar la accion. Se envia el id de la cancion
 a agregar en el playlist en el body.
@@ -113,21 +113,21 @@ a agregar en el playlist en el body.
  <li> ______ http://localhost:8080/mymusic/playlists/{id}/songs/</li>
 </ul>
 
-Quitar una canción de una playlist:
+Quitar una canción de una playlist:</p>
 Permite quitar una cacion del playlist. Requiere autenticacion. Solo el usuario que creo
 el playlist puede realizar la accion.
 <ul>
  <li> ______ http://localhost:8080/mymusic/playlists/{id}/songs/{song_id}</li>
 </ul>
 
-Borrar una canción de una playlist:
+Borrar una canción de una playlist:</p>
 Permite eliminar un playlist. Requiere autenticacion. Solo el usuario que creo el playlist
 puede borrarla.
 <ul>
  <li> ______ http://localhost:8080/mymusic/playlists/{id}</li>
 </ul>
 
-Criterios de valoración:
+Criterios de valoración:</p>
 Se valorará la capacidad de resolver problemas de arquitectura de aplicaciones que se
 comunican mediante una capa de servicios, en particular, la implementación
 cliente/servidor de un API Rest y como implementar un proceso de autenticación contra

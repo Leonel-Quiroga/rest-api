@@ -3,7 +3,9 @@
 
 # JDT-specific (Eclipse Java Development Tools)     
 .classpath
+
 /target/
 
+
 .# IntelliJ IDEA
-.idea
+/.idea/

@@ -3,14 +3,14 @@
 CONSIGNA:
 
 <p>Presentación y objetivos</p>
-Se desea aplicar en forma práctica los conceptos de Web Services adquiridos en teoría.
+<p>Se desea aplicar en forma práctica los conceptos de Web Services adquiridos en teoría.
 El objetivo de esta actividad es implementar el backend de una aplicación de software
-mediante un web service Restful que implementa la arquitectura Rest.
+mediante un web service Restful que implementa la arquitectura Rest.</p>
 
 <p>Materiales y recursos:</p>
-Para el desarrollo de la actividad deberán utilizarse los siguientes materiales y recursos:
+<p>Para el desarrollo de la actividad deberán utilizarse los siguientes materiales y recursos:</p>
 <ul>
-        <li>HTTP: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol</li>
+        <li> HTTP: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol</li>
         <li> HTTP status codes: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes</li>
         <li> Rest: https://en.wikipedia.org/wiki/Representational_state_transfer</li>
         <li> Rest Api - resource naming: https://restfulapi.net/resource-naming/</li>
@@ -23,11 +23,11 @@ Para el desarrollo de la actividad deberán utilizarse los siguientes materiales
 </ul>
 
 <p>Enunciado General</p>
-Se pide desarrollar realizar el backend de una aplicación de música mediante un web
+<p>Se pide desarrollar realizar el backend de una aplicación de música mediante un web
 service Restful que implementa la arquitectura Rest.
 Particularmente se pide desarrollar la funcionalidad CRUD de paylists por parte de los
 usuarios.
-El backend debe implementar el standard de autenticacion JWT.
+El backend debe implementar el standard de autenticacion JWT.</p>
 
 <p>El backend debe permitir a los usuarios:</p>
 <ul>
@@ -56,79 +56,79 @@ El backend debe implementar el standard de autenticacion JWT.
         <li> playlists_songs(id:integer, playlist_id: integer, song_id:integer)</li>
         <li> songs(id:integer,name:varchar,author:varchar,genre:varchar)</li>
 </ul>
-Las capas de negocio y DAO se pide utilizar EJB - del modo utlizado en POO -
+<p>Las capas de negocio y DAO se pide utilizar EJB - del modo utlizado en POO -
 Para la capa de persistencia vamos utilizar JPA.
-El motor de base de datos puede ser MySQL o PostgreSQL.
+El motor de base de datos puede ser MySQL o PostgreSQL.</p>
 
 <p>Definicion de endpoints: </p>
 El API Rest a desarrollar debe implementar los siguientes endpoints.
-Completar los mismos con según el método/verbo de HTTP que corresponda.
+Completar los mismos con según el método/verbo de HTTP que corresponda.</p>
 
 <p>Autenticación:</p>
-Para autenticacion del usuario, en body del resquest deben ir los parametros email y
+<p>Para autenticacion del usuario, en body del resquest deben ir los parametros email y
 password. Retorna token que deberá ser incluido en el header de los endpoints que
-requieran autenticacion.
+requieran autenticacion.</p>
 <ul>
   <li>POST http://localhost:8080/mymusic/auth</li>
 </ul>
 
 <p>Lista de canciones:</p>
-Retorna JSON con el listado de canciones.
+<p>Retorna JSON con el listado de canciones.</p>
 <ul>
   <li>______ http://localhost:8080/mymusic/songs?author="Spinetta"&genre=rock</li>
 </ul>
 
 <p>Listado de playlist creadas:</p>
-Retorna JSON con el listado de playlists
+<p>Retorna JSON con el listado de playlists</p>
 <ul>
   <li>______ http://localhost:8080/mymusic/playlists/</li>
 </ul>
 
 <p>Crear una playlist:</p>
-Permite crear una nueva playlist - Requiere estar autenticado y enviar token en header.
-En el body se envia los datos del playlist en formato JSON.
+<p>Permite crear una nueva playlist - Requiere estar autenticado y enviar token en header.
+En el body se envia los datos del playlist en formato JSON.</p>
 <ul>
   <li>______ http://localhost:8080/mymusic/playlists/</li>
 </ul>
 
 <p>Información de una playlist:</p>
-Retorna JSON con todos los datos de un playlist incluyendo la lista de canciones.
+Retorna JSON con todos los datos de un playlist incluyendo la lista de canciones.</p>
 <ul>
   <li>______ http://localhost:8080/mymusic/playlists/{id}</li>
 </ul>
 
 <p>Actualizar el nombre de una playlist:</p>
-Permite actualizar el nombre de un playlist. Requiere autenticacion.
+<p>Permite actualizar el nombre de un playlist. Requiere autenticacion.
 Solo el usuario que creo el playlist puede actualizarlo. Se envia en el body el nombre
-que debe tomar el playlist.
+que debe tomar el playlist.</p>
 <ul>
  <li> ______ http://localhost:8080/mymusic/playlists/{id}</li>
 </ul>
 
 Agregar una canción a una playlist:</p>
-Permite agregar una cancion a un playlist. Requiere autenticacion.
+<p>Permite agregar una cancion a un playlist. Requiere autenticacion.
 Solo el usuario que creo el playlist puede realizar la accion. Se envia el id de la cancion
-a agregar en el playlist en el body.
+a agregar en el playlist en el body.</p>
 <ul>
  <li> ______ http://localhost:8080/mymusic/playlists/{id}/songs/</li>
 </ul>
 
-Quitar una canción de una playlist:</p>
+<p>Quitar una canción de una playlist:</p>
 Permite quitar una cacion del playlist. Requiere autenticacion. Solo el usuario que creo
-el playlist puede realizar la accion.
+el playlist puede realizar la accion.</p>
 <ul>
  <li> ______ http://localhost:8080/mymusic/playlists/{id}/songs/{song_id}</li>
 </ul>
 
-Borrar una canción de una playlist:</p>
-Permite eliminar un playlist. Requiere autenticacion. Solo el usuario que creo el playlist
-puede borrarla.
+<p>Borrar una canción de una playlist:</p>
+<p>Permite eliminar un playlist. Requiere autenticacion. Solo el usuario que creo el playlist
+puede borrarla.</p>
 <ul>
  <li> ______ http://localhost:8080/mymusic/playlists/{id}</li>
 </ul>
 
-Criterios de valoración:</p>
-Se valorará la capacidad de resolver problemas de arquitectura de aplicaciones que se
+<p>Criterios de valoración:</p>
+<p>Se valorará la capacidad de resolver problemas de arquitectura de aplicaciones que se
 comunican mediante una capa de servicios, en particular, la implementación
 cliente/servidor de un API Rest y como implementar un proceso de autenticación contra
-un API mediante JWT
+un API mediante JWT</p>

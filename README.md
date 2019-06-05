@@ -71,54 +71,63 @@ requieran autenticacion.
 <ul>
   <li>POST http://localhost:8080/mymusic/auth</li>
 </ul>
-Lista de canciones
+
+Lista de canciones:
 Retorna JSON con el listado de canciones.
 <ul>
   <li>______ http://localhost:8080/mymusic/songs?author="Spinetta"&genre=rock</li>
 </ul>
-Listado de playlist creadas
+
+Listado de playlist creadas:
 Retorna JSON con el listado de playlists
 <ul>
   <li>______ http://localhost:8080/mymusic/playlists/</li>
 </ul>
-Crear una playlist
+
+Crear una playlist:
 Permite crear una nueva playlist - Requiere estar autenticado y enviar token en header.
 En el body se envia los datos del playlist en formato JSON.
 <ul>
   <li>______ http://localhost:8080/mymusic/playlists/</li>
 </ul>
-Información de una playlist
+
+Información de una playlist:
 Retorna JSON con todos los datos de un playlist incluyendo la lista de canciones.
 <ul>
   <li>______ http://localhost:8080/mymusic/playlists/{id}</li>
 </ul>
-Actualizar el nombre de una playlist
+
+Actualizar el nombre de una playlist:
 Permite actualizar el nombre de un playlist. Requiere autenticacion.
 Solo el usuario que creo el playlist puede actualizarlo. Se envia en el body el nombre
 que debe tomar el playlist.
 <ul>
  <li> ______ http://localhost:8080/mymusic/playlists/{id}</li>
 </ul>
-Agregar una canción a una playlist
+
+Agregar una canción a una playlist:
 Permite agregar una cancion a un playlist. Requiere autenticacion.
 Solo el usuario que creo el playlist puede realizar la accion. Se envia el id de la cancion
 a agregar en el playlist en el body.
 <ul>
  <li> ______ http://localhost:8080/mymusic/playlists/{id}/songs/</li>
 </ul>
-Quitar una canción de una playlist
+
+Quitar una canción de una playlist:
 Permite quitar una cacion del playlist. Requiere autenticacion. Solo el usuario que creo
 el playlist puede realizar la accion.
 <ul>
  <li> ______ http://localhost:8080/mymusic/playlists/{id}/songs/{song_id}</li>
 </ul>
-Borrar una canción de una playlist
+
+Borrar una canción de una playlist:
 Permite eliminar un playlist. Requiere autenticacion. Solo el usuario que creo el playlist
 puede borrarla.
 <ul>
  <li> ______ http://localhost:8080/mymusic/playlists/{id}</li>
 </ul>
-Criterios de valoración
+
+Criterios de valoración:
 Se valorará la capacidad de resolver problemas de arquitectura de aplicaciones que se
 comunican mediante una capa de servicios, en particular, la implementación
 cliente/servidor de un API Rest y como implementar un proceso de autenticación contra

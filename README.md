@@ -9,17 +9,18 @@ mediante un web service Restful que implementa la arquitectura Rest.
 
 Materiales y recursos
 Para el desarrollo de la actividad deberán utilizarse los siguientes materiales y recursos:
-● Clases teóricas.
-● HTTP: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
-● HTTP status codes: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
-● Rest: https://en.wikipedia.org/wiki/Representational_state_transfer
-● Rest Api - resource naming: https://restfulapi.net/resource-naming/
-● https://docs.oracle.com/javaee/7/tutorial/jaxrs002.htm
-● https://javaee.github.io/tutorial/jsonp005.html
-● Jersey: https://jersey.github.io/documentation/latest/index.html
-● Web JWT:https://jwt.io/introduction/
-● JJWT (Java JWT: JSON Web Token for Java and Android): https://github.com/jwtk/jjwt
-● Postman: https://www.getpostman.com/
+<ul>
+        <li>HTTP: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol</li>
+        <li> HTTP status codes: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes</li>
+        <li> Rest: https://en.wikipedia.org/wiki/Representational_state_transfer</li>
+        <li> Rest Api - resource naming: https://restfulapi.net/resource-naming/</li>
+        <li> https://docs.oracle.com/javaee/7/tutorial/jaxrs002.htm</li>
+        <li> https://javaee.github.io/tutorial/jsonp005.html</li>
+        <li> Jersey: https://jersey.github.io/documentation/latest/index.html</li>
+        <li> Web JWT:https://jwt.io/introduction/</li>
+        <li> JJWT (Java JWT: JSON Web Token for Java and Android): https://github.com/jwtk/jjwt</li>
+        <li> Postman: https://www.getpostman.com/</li>
+</ul>
 
 Enunciado General
 Se pide desarrollar realizar el backend de una aplicación de música mediante un web
@@ -29,21 +30,24 @@ usuarios.
 El backend debe implementar el standard de autenticacion JWT.
 
 El backend debe permitir a los usuarios:
-        ● Autenticarse mediante su email y password.
-        ● Consultar las canciones disponibles, pudiendo ser filtradas por autor y genero.
-        ● Crear paylists
-        ● Agregar y quitar canciones a un playlist
-        ● Cambiar el nombre de una playlist existente
-        ● Consultar las playlists creadas
-        ● Consultar las canciones de una playlist
-        ● Borrar una playlist.
+<ul>
+        <li> Autenticarse mediante su email y password.</li>
+        <li> Consultar las canciones disponibles, pudiendo ser filtradas por autor y genero.</li>
+        <li> Crear paylists</li>
+        <li> Agregar y quitar canciones a un playlist</li>
+        <li> Cambiar el nombre de una playlist existente</li>
+        <li> Consultar las playlists creadas</li>
+        <li> Consultar las canciones de una playlist</li>
+        <li> Borrar una playlist.</li>
+</ul>
 
 La aplicación debe implementar las siguientes clases:
-        ● User (email:String,password:String)
-        ● PlayList (name:String,user:User,songs:List<Song>)
-        ● Song (name:String,author:String,genre:Genre)
-        ● Genre (enum:rock,techno,pop,jazz,folk,classical)
-
+<ul>
+        <li> User (email:String,password:String)</li>
+        <li> PlayList (name:String,user:User,songs:List<Song>)</li>
+        <li> Song (name:String,author:String,genre:Genre)</li>
+        <li> Genre (enum:rock,techno,pop,jazz,folk,classical)</li>
+</ul>
 El modelo de la base de datos debe tener las siguientes tablas:
         ● users(id:integer, email:varchar, password:varchar)
         ● playlists(id:integer, user_id:integer, name:varchar)

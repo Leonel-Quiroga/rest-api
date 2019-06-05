@@ -1,7 +1,5 @@
 # rest-api
 
-CONSIGNA:
-
 <p>Presentación y objetivos</p>
 <p>Se desea aplicar en forma práctica los conceptos de Web Services adquiridos en teoría.
 El objetivo de esta actividad es implementar el backend de una aplicación de software
@@ -13,9 +11,12 @@ mediante un web service Restful que implementa la arquitectura Rest.</p>
         <li> HTTP: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol</li>
         <li> HTTP status codes: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes</li>
         <li> Rest: https://en.wikipedia.org/wiki/Representational_state_transfer</li>
-        <li> Rest Api - resource naming: https://restfulapi.net/resource-naming/</li>
-        <li> https://docs.oracle.com/javaee/7/tutorial/jaxrs002.htm</li>
-        <li> https://javaee.github.io/tutorial/jsonp005.html</li>
+        <li> Rest Api - resource naming: </li>
+              <ul>
+                <li>https://restfulapi.net/resource-naming/</li>
+                <li> https://docs.oracle.com/javaee/7/tutorial/jaxrs002.htm</li>
+                <li> https://javaee.github.io/tutorial/jsonp005.html</li>
+              </ul>
         <li> Jersey: https://jersey.github.io/documentation/latest/index.html</li>
         <li> Web JWT:https://jwt.io/introduction/</li>
         <li> JJWT (Java JWT: JSON Web Token for Java and Android): https://github.com/jwtk/jjwt</li>

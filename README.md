@@ -70,12 +70,12 @@ password. Retorna token que deberá ser incluido en el header de los endpoints q
 requieran autenticacion.
 <ul>
   <li>POST http://localhost:8080/mymusic/auth</li>
-</ul></ul>
+</ul>
 Lista de canciones
 Retorna JSON con el listado de canciones.
 <ul>
   <li>______ http://localhost:8080/mymusic/songs?author="Spinetta"&genre=rock</li>
-
+</ul>
 Listado de playlist creadas
 Retorna JSON con el listado de playlists
 <ul>

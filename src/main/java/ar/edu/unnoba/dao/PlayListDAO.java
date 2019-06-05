@@ -41,7 +41,7 @@ public class PlayListDAO extends AbstractDAO<PlayList> {
 			result = query.getSingleResult();
 		} catch (Exception e) {
 			logger.warning("getInformationOfPlaylist: " + e.getMessage());
-			throw new EntityNotFoundException("No se encontro Playlist");
+			throw new EntityNotFoundException("No se encontro playlist");
 		}
 		return (PlayList) result;
 	}
@@ -76,7 +76,7 @@ public class PlayListDAO extends AbstractDAO<PlayList> {
 		} catch (Exception e) {
 			em.getTransaction().rollback();
 			logger.warning("createPlayList: " + e.getMessage());
-			throw new EntityNotFoundException("No se encontro el usuario");
+			throw new EntityNotFoundException("No se pudo crear playlist");
 		} 
 	}
 
@@ -89,7 +89,7 @@ public class PlayListDAO extends AbstractDAO<PlayList> {
 		} catch (Exception e) {
 			em.getTransaction().rollback();
 			logger.warning("updateName: " + e.getMessage());
-			throw new EntityNotFoundException("No se encontro el usuario");
+			throw new EntityNotFoundException("No se pudo actualizar nombre de playlist");
 		} 
 	}
 
@@ -121,7 +121,7 @@ public class PlayListDAO extends AbstractDAO<PlayList> {
 		} catch (Exception e) {
 			em.getTransaction().rollback();
 			logger.warning("updateName: " + e.getMessage());
-			throw new EntityNotFoundException("No se encontro el usuario");
+			throw new EntityNotFoundException("No se pudo remover canción");
 		} 
 	}
 	
@@ -134,7 +134,7 @@ public class PlayListDAO extends AbstractDAO<PlayList> {
 		} catch (Exception e) {
 			em.getTransaction().rollback();
 			logger.warning("addSongToPlayList: " + e.getMessage());
-			throw new EntityNotFoundException("No pudo insertarse la canción");
+			throw new EntityNotFoundException("No pudo se pudo borrar la playlist");
 		} 
 	}
 	

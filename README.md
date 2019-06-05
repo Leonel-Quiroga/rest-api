@@ -9,17 +9,17 @@ mediante un web service Restful que implementa la arquitectura Rest.
 
 Materiales y recursos
 Para el desarrollo de la actividad deberán utilizarse los siguientes materiales y recursos:
-        ● Clases teóricas.
-        ● HTTP: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
-        ● HTTP status codes: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
-        ● Rest: https://en.wikipedia.org/wiki/Representational_state_transfer
-        ● Rest Api - resource naming: https://restfulapi.net/resource-naming/
-        ● https://docs.oracle.com/javaee/7/tutorial/jaxrs002.htm
-        ● https://javaee.github.io/tutorial/jsonp005.html
-        ● Jersey: https://jersey.github.io/documentation/latest/index.html
-        ● Web JWT:https://jwt.io/introduction/
-        ● JJWT (Java JWT: JSON Web Token for Java and Android): https://github.com/jwtk/jjwt
-        ● Postman: https://www.getpostman.com/
+● Clases teóricas.
+● HTTP: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+● HTTP status codes: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+● Rest: https://en.wikipedia.org/wiki/Representational_state_transfer
+● Rest Api - resource naming: https://restfulapi.net/resource-naming/
+● https://docs.oracle.com/javaee/7/tutorial/jaxrs002.htm
+● https://javaee.github.io/tutorial/jsonp005.html
+● Jersey: https://jersey.github.io/documentation/latest/index.html
+● Web JWT:https://jwt.io/introduction/
+● JJWT (Java JWT: JSON Web Token for Java and Android): https://github.com/jwtk/jjwt
+● Postman: https://www.getpostman.com/
 
 Enunciado General
 Se pide desarrollar realizar el backend de una aplicación de música mediante un web

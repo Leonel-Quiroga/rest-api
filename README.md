@@ -19,7 +19,7 @@ mediante un web service Restful que implementa la arquitectura Rest.</p>
               </ul>
         <li> Jersey: https://jersey.github.io/documentation/latest/index.html</li>
         <li> Web JWT:https://jwt.io/introduction/</li>
-        <li> JJWT (Java JWT: JSON Web Token for Java and Android): https://github.com/jwtk/jjwt</li>
+        <li> JWT (Java JWT: JSON Web Token for Java and Android): https://github.com/jwtk/jjwt</li>
         <li> Postman: https://www.getpostman.com/</li>
 </ul>
 

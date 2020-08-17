@@ -59,6 +59,10 @@ public class Song extends AbstractEntity {
 		return genre;
 	}
 
+	public void setGenre(Genre genre) {
+		this.genre = genre;
+	}
+
 	public Song copyForm(Song song) {
 
 		if (song.name != null) {

@@ -19,6 +19,7 @@ import ar.edu.unnoba.dao.UserDAO;
 import ar.edu.unnoba.domain.Token;
 import ar.edu.unnoba.domain.User;
 import ar.edu.unnoba.exceptions.EntityNotFoundException;
+import ar.edu.unnoba.mappers.AuthenticationExceptionMapper;
 import ar.edu.unnoba.util.TokenUtil;
 
 @Path("/auth")
@@ -46,8 +47,9 @@ public class AuthenticationResource {
             token = new Token();
             token.setAuthToken(jwtString);
             token.setExpires(expiry);	
-		} catch (Exception e) {
-			logger.info("ERROR: authenticateUser - " + e.getMessage());
+		} catch (NotAuthorizedException e) {
+			return new AuthenticationExceptionMapper().toResponse(e);
+			//logger.info("ERROR: authenticateUser - " + e.getMessage());
 		}
         return Response.ok(token).build();
     }

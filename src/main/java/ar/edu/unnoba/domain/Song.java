@@ -4,7 +4,6 @@ import java.util.List;
 
 import javax.persistence.*;
 
-import ar.edu.unnoba.domain.AbstractEntity;
 import ar.edu.unnoba.enums.Genre;
 
 @SuppressWarnings("serial")

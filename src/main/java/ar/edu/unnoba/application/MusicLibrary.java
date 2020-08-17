@@ -23,8 +23,7 @@ public class MusicLibrary extends ResourceConfig {
 	private static Key key;
 	
 	public MusicLibrary () {
-		this(new UserDAO(), new SongDAO(), new PlayListDAO(), MacProvider.generateKey());
-		
+		this(new UserDAO(), new SongDAO(), new PlayListDAO(), MacProvider.generateKey());		
 	}
 	
 	public MusicLibrary(final UserDAO userDAO, final SongDAO songDAO, final PlayListDAO playlistDAO, final Key key) {	

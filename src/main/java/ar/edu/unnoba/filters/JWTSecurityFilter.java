@@ -56,9 +56,8 @@ public class JWTSecurityFilter implements ContainerRequestFilter {
 		// Obtego datos de la cabecera
 		String autHeader = ((ContainerRequest) requestContext).getHeaderString("auth");
 
-		// Si no hay datos lanzo una excepción ya que en esta instancia es
-		// necesario tenerlos
-		if (autHeader == null || autHeader.isEmpty()) {
+		// Si no hay datos lanzo una excepción ya que en esta instancia es necesario tenerlos
+		if (autHeader == "" || autHeader.isEmpty()) {
 			throw new WebApplicationException(Response.Status.UNAUTHORIZED);
 		}
 

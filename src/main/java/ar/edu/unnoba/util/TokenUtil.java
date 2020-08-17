@@ -34,7 +34,7 @@ public class TokenUtil {
 				.setIssuedAt(new Date())
 				.signWith(signatureAlgorithm, key)
 				.compact();
-		return jwtString;
+		return "Bearer " + jwtString;
 	}
 
 	public static boolean isValid(String token, Key key) {

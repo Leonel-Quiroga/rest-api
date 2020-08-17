@@ -2,11 +2,15 @@ package ar.edu.unnoba.filters;
 
 import java.io.IOException;
 
+import javax.inject.Singleton;
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerResponseContext;
 import javax.ws.rs.container.ContainerResponseFilter;
 import javax.ws.rs.ext.Provider;
 
+
+
+@Singleton
 @Provider
 public class CORSFilter implements ContainerResponseFilter{
 	

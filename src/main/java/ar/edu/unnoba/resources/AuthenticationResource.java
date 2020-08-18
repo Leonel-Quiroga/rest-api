@@ -74,7 +74,7 @@ public class AuthenticationResource {
             logger.info("USER AUTENTICADO");
         } else {
             logger.info("USER NO AUTENTICADO");
-            throw new NotAuthorizedException("USUARIO O CONTRASEÑA INCORRRECTOS");
+            throw new NotAuthorizedException("Usuario y/o contraseña incorrecto");
         }
     }
 }

@@ -11,8 +11,6 @@ import javax.ws.rs.container.AsyncResponse;
 import javax.ws.rs.container.Suspended;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.SecurityContext;
-
 import ar.edu.unnoba.dao.PlayListDAO;
 import ar.edu.unnoba.dao.UserDAO;
 import ar.edu.unnoba.dto.PlayListDTO;
@@ -31,9 +29,6 @@ public class PlayListAsync {
 	@Context
 	private UserDAO userDAO;
 
-	@Context
-	private SecurityContext securityContext;
-	
 	private Response<PlayListDTO> response = new Response<PlayListDTO>();
 	
 	@GET
